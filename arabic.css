@@ -1,0 +1,886 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Jost:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/sweet-doughnuts");
+@import url("https://fonts.cdnfonts.com/css/xisfani");
+* {
+  padding: 0%;
+  margin: 0%;
+  /* border: 2px solid red; */
+}
+
+/* ================================== HOME PAGE ===================================== */
+.mShareArabicCard {
+  width: 100%;
+  height: 50px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+}
+.mShare img {
+  width: 30px;
+  margin: 10px;
+  cursor: pointer; /* ===== aad  from fayez ===== */
+}
+.mLanguage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: 700;
+  background-color: #000000;
+  border-radius: 50px;
+  width: 70px;
+  height: 25px;
+  margin: 15px 0px 0px 20px;
+}
+.mEnglish {
+  cursor: pointer;
+  font-family: "Jost", sans-serif;
+  margin-left: 5px;
+  border-radius: 10px;
+  height: 16px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.mArabic {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  font-family: "Jost", sans-serif;
+  margin-right: 5px;
+  border-radius: 10px;
+  height: 16px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mCafendiLogo {
+  color: #5c5c5c;
+  margin: 70px 0px;
+  width: 100%;
+  font-family: "Cardo", serif;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mInstaUser {
+  font-size: large;
+  color: #000000;
+  width: 100%;
+  font-family: "Jost", sans-serif;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mKelmaHelwa {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #5c5c5c;
+  width: 100%;
+  font-family: "lamar";
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mMenuClosedCard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.mMenu {
+  color: #000000;
+  font-size: medium;
+  font-family: "lamar";
+  font-weight: 900;
+  border-radius: 15px;
+  background: linear-gradient(130deg, #ffffff, #f3f3f3);
+  box-shadow: 1px 1px 5px 0px #d1d1d1;
+  width: 270px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer; /* ===== aad  from fayez ===== */
+}
+.mMenu h2 {
+  font-weight: 900;
+}
+.mDot {
+  width: 10px;
+  height: 10px;
+  background: #000000;
+  box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  animation: mansBlack infinite 4s;
+}
+@keyframes mansBlack {
+  0% {
+    box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  50% {
+    box-shadow: 0px 0px 0px 6px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
+  }
+}
+/* ===================== SOCIAL MEDIA ================== */
+.mSocialMediaCard {
+  position: relative;
+  margin-top: 60px;
+  /* background-color: #ab5050; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.mActualCard {
+  position: relative;
+  /* border: #000000 solid 2px; */
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mActualCard div {
+  width: 45px;
+  height: 45px;
+  /* background: red; */
+}
+.mActualCard div > img {
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+  filter: brightness(0);
+  z-index: 0;
+}
+.mInstaCard:hover img {
+  scale: 1.2;
+}
+.mTicCard:hover img {
+  scale: 1.2;
+}
+.mMapCard:hover img {
+  scale: 1.2;
+}
+.mPhone1Card:hover img {
+  scale: 1;
+}
+.mPhone1Card img {
+  scale: 0.8;
+}
+
+.mPhonesOpenCard {
+  transform: translateY(10px);
+  opacity: 1;
+  position: absolute;
+  top: -5px;
+  right: 0;
+  width: 20px;
+  height: 10px;
+  background: linear-gradient(
+    120deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.5)
+  );
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.mPhone1Card:hover .mPhonesOpenCard {
+  font-size: 14px;
+  font-family: "Jost", sans-serif;
+  color: #1b1b1b;
+  opacity: 1;
+  width: 200px;
+  height: 90.8px;
+  top: -130px;
+  right: 0;
+  transform: translateY(0px);
+}
+.mPhonesOpenCard div {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.mPhonesOpenCard div:hover {
+  background-color: rgba(214, 214, 214, 0.8);
+  transition: all 0.3s ease;
+}
+.mNum1 {
+  border-bottom: #ffffff solid 1px;
+}
+.mFooter {
+  font-family: "lamar";
+  font-weight: 600;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  font-size: 14px;
+  /* background-color: #000000; */
+}
+.m2M {
+  font-family: "Sweet Doughnuts", sans-serif;
+  background-color: #0000002a;
+  width: 40px;
+  height: 8px;
+  margin-right: 5px;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer; /* ===== aad  from fayez ===== */
+}
+.mDotted {
+  margin-top: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 4px;
+  height: 4px;
+  background-color: #5c5c5c;
+  border-radius: 50%;
+}
+/* =========================== MENU OPEN ========================= */
+.mOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 9999;
+}
+.mMenuPageOpen {
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.2);
+  width: 85%;
+  height: 95dvh;
+  padding: 10px 20px;
+  box-shadow: 0 0px 30px rgb(0, 0, 0);
+  transition: 0.35s ease;
+  opacity: 0;
+  z-index: 9999;
+  display: flex; /* ===== aad  from fayez ===== */
+  flex-direction: column; /* ===== aad  from fayez ===== */
+  overflow: hidden; /* ===== aad  from fayez ===== */
+}
+
+.mOverlay.mActive {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mOverlay.mActive .mMenuPageOpen {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+.mCloseNavbarCard {
+  /* background-color: #000000; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mCloseBtn {
+  width: 30px;
+  height: 30px;
+  border: #000000 solid 1px;
+  border-radius: 50%;
+  font-size: 26px;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  transition: all 0.3s ease;
+  z-index: 10000; /* ===== aad  from fayez ===== */
+}
+.mCloseBtn:hover {
+  scale: 1.3;
+  z-index: 10; /* ===== aad  from fayez ===== */
+}
+.mXimg {
+  scale: 0.6;
+}
+/* ========================= NAVBAR ========================== */
+.mNavBar {
+  position: fixed; /* ===== aad  from fayez ===== */
+  width: 70%; /*edited*/
+  height: 30px;
+  background-color: #838383b7;
+  border-radius: 40px;
+  display: flex;
+  /* justify-content: space-around; */ /* ===== commented  from fayez ===== */
+  align-items: center;
+  font-size: 14px;
+  top: 30px; /* ===== aad  from fayez ===== */
+  left: 50%; /* ===== aad  from fayez ===== */
+  transform: translateX(-50%); /* ===== aad  from fayez ===== */
+  margin: 20px auto;
+  padding: 0 40px; /* ===== aad  from fayez ===== */
+  z-index: 10000; /* ===== aad  from fayez ===== */
+}
+
+.fscrollArea {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  flex: 1;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 0 5px;
+  user-select: none;
+}
+
+.fscrollArea::-webkit-scrollbar {
+  display: none;
+}
+
+.mNavBtn {
+  /* ===== aad  from fayez ===== */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.mNavBtn.prev {
+  /* ===== aad  from fayez ===== */
+  left: 8px;
+}
+
+.mNavBtn.next {
+  /* ===== aad  from fayez ===== */
+  right: 8px;
+}
+
+.mNavBtn img {
+  /* ===== aad  from fayez ===== */
+  width: 30px;
+  height: 28px;
+}
+
+.ftopMenuTitle {
+  /* ===== aad  from fayez ===== */
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.mNavBarChosed {
+  font-family: "lamar";
+  font-weight: 700;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 80px; */ /* ===== commented  from fayez ===== */
+  height: 20px;
+  padding: 0 15px; /* ===== aad  from fayez ===== */
+  /* background-color: #ffffff; */
+  border-radius: 40px;
+  transition: all 0.3s ease;
+  position: relative; /* ===== aad  from fayez ===== */
+  z-index: 22; /* ===== aad  from fayez ===== */
+  flex-shrink: 0; /* ===== aad  from fayez ===== */
+  white-space: nowrap; /* ===== aad  from fayez ===== */
+  cursor: pointer; /* ===== aad  from fayez ===== */
+  min-width: fit-content; /* ===== aad  from fayez ===== */
+}
+
+.mNavBarSelected {
+  color: #000000;
+  /* width: 80px; */ /* ===== commented  from fayez ===== */
+  height: 20px;
+  /* background-color: #ffffff; */ /* ===== commented  from fayez ===== */
+  border-radius: 40px;
+  transition: all 0.3s ease;
+  transform: translateX(0px); /* ===== aad  from fayez ===== */
+  position: relative; /* ===== aad  from fayez ===== */
+  cursor: pointer; /* ===== aad  from fayez ===== */
+  left: 0; /* ===== aad  from fayez ===== */
+  padding: 0 15px; /* ===== aad  from fayez ===== */
+  display: flex; /* ===== aad  from fayez ===== */
+  justify-content: center; /* ===== aad  from fayez ===== */
+  align-items: center; /* ===== aad  from fayez ===== */
+  z-index: 1; /* ===== aad  from fayez ===== */
+  flex-shrink: 0; /* ===== aad  from fayez ===== */
+  min-width: fit-content; /* ===== aad  from fayez ===== */
+}
+.mNavBarChosed h4 {
+  font-weight: 800;
+}
+
+.mNavBarSelected::before {
+  /* ===== aad  from fayez ===== */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--width, 70px);
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  z-index: -1;
+  transition: 0.3s ease;
+  transform: translateX(var(--move, 0px));
+}
+
+#hotDrinks {
+  margin-top: 50px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* ========================= END OF NAVBAR ========================== */
+/* ========================= YOU WRITE HERE ... ========================== */
+
+/* =========================== menu section ============================ */
+
+.fCards-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+  overflow-y: auto;
+  height: 100%;
+  margin: 0px auto;
+  z-index: 1;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* =========================== cards ============================ */
+.fContent-section {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.fSection-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.fDrinks-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================== cards content ============================ */
+.fDrink-card {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(139, 115, 85, 0.05);
+  transition: all 0.2s ease;
+  border: 1px solid rgba(230, 210, 181, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: auto;
+}
+
+.fDrink-card:hover {
+  transform: translateY(-4px);
+}
+
+.fDrink-card-content {
+  flex: 1;
+}
+
+/* .fSection-name {
+  background-color: #6a6a6a55;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-left: black 5px solid;
+  border-right: black 5px solid;
+  border-radius: 5px;
+  width: 80%;
+  margin: 10px auto;
+  font-family: "Fonarto", sans-serif;
+} */
+
+.fSection-title {
+  padding-top: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 15px;
+  width: 20%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.275);
+    font-family: "lamar";
+
+  cursor: default;
+  padding-bottom: 5px; /* chang from english*/
+}
+
+.fTittle {
+  font-weight: 600;
+  font-size: 15px;
+  margin: 0 0 5px 0;
+  line-height: 1.3;
+  font-family: "lamar";
+  cursor: default;
+}
+
+.fAbout {
+  font-size: 12px;
+  color: gray;
+  line-height: 1.4;
+  margin: 0;
+  opacity: 0.8;
+ font-family: "lamar";
+  cursor: default;
+}
+
+.fline {
+  display: none;
+}
+
+.fPrice {
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: 15px;
+  padding: 5px 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(139, 115, 85, 0.2);
+  white-space: nowrap;
+  font-family: "Xisfani", sans-serif;
+  cursor: default;
+}
+
+.fDrink-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(139, 115, 85, 0.1);
+  border-color: var(--latte);
+}
+
+.fDrink-card:hover .fPrice {
+  background: var(--warm-brown);
+  color: white;
+}
+
+/* =========================== mobile responsive design ============================ */
+@media (max-width: 600px) {
+  .mNavBar {
+    width: 80%;
+    padding: 0 35px;
+  }
+
+  .mNavBarChosed {
+    padding: 0 12px;
+    font-size: 14px;
+  }
+
+  .fDrinks-grid {
+    padding: 0 15px;
+    gap: 10px;
+  }
+
+  .fDrink-card {
+    padding: 14px 16px;
+    border-radius: 10px;
+  }
+
+  .fSection-title {
+    width: 40%;
+    font-size: 18px;
+  }
+
+  .fTittle {
+    font-size: 14px;
+  }
+
+  .fAbout {
+    font-size: 11px;
+  }
+
+  .fPrice {
+    font-size: 14px;
+    padding: 5px 12px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .mNavBar {
+    width: 70%;
+    padding: 0px 30px;
+  }
+
+  .mNavBarChosed {
+    padding: 0 10px;
+    font-size: 10px;
+  }
+  .mNavBtn.prev {
+  left: 0px;
+}
+
+.mNavBtn.next {
+  right: 0px;
+}
+}
+/* ========================= end of your code ========================== */
+
+/* ========================== WHITE & BLACK PALETTE ========================== */
+:root {
+  --pure-white: #ffffff;
+  --pure-black: #000000;
+  --soft-white: #fafafa;
+  --soft-black: #1a1a1a;
+  --medium-gray: #5c5c5c;
+  --light-gray: #f3f3f3;
+  --soft-shadow: rgba(0, 0, 0, 0.08);
+  --medium-shadow: rgba(0, 0, 0, 0.15);
+  --dark-shadow: rgba(0, 0, 0, 0.25);
+  --nav-bg: rgba(131, 131, 131, 0.72);
+  --hover-black: #333333;
+  --hover-white: #f8f8f8;
+}
+
+/* ========================== GENERAL ELEMENTS ========================== */
+body {
+  background-color: var(--pure-white);
+  color: var(--pure-black);
+}
+
+/* ========================== HEADER ELEMENTS ========================== */
+.mCafendiLogo {
+  color: var(--medium-gray);
+}
+
+.mInstaUser {
+  color: var(--pure-black);
+}
+
+.mKelmaHelwa {
+  color: var(--medium-gray);
+}
+
+/* ========================== LANGUAGE SWITCHER ========================== */
+.mLanguage {
+  background-color: var(--pure-black) !important;
+  border: 1px solid var(--pure-black);
+}
+
+.mEnglish {
+  color: #ffff !important;
+  border: 1px solid var(--pure-black);
+}
+
+.mArabic {
+  color: black !important;
+}
+
+/* ========================== MENU BUTTON ========================== */
+.mMenu {
+  background: linear-gradient(
+    135deg,
+    var(--pure-white),
+    var(--light-gray)
+  ) !important;
+  border: 1px solid var(--light-gray);
+  box-shadow: 1px 1px 5px 0px rgba(209, 209, 209, 0.8);
+  color: var(--pure-black);
+}
+
+.mMenu h2 {
+  color: var(--pure-black);
+}
+
+.mDot {
+  background: var(--pure-black);
+  box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes mansBlack {
+  0%,
+  100% {
+    box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0px 0px 0px 6px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* ========================== SOCIAL MEDIA ========================== */
+.mActualCard div > img {
+  filter: brightness(0) !important;
+}
+
+.mPhonesOpenCard {
+  background: linear-gradient(
+    120deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.4)
+  ) !important;
+  backdrop-filter: blur(8px);
+  color: var(--soft-black);
+  border: 1px solid var(--medium-shadow);
+}
+
+.mPhonesOpenCard div:hover {
+  background-color: rgba(248, 248, 248, 0.8) !important;
+}
+
+.mNum1 {
+  border-bottom: 1px solid var(--light-gray) !important;
+}
+
+/* ========================== NAVIGATION BAR ========================== */
+.mNavBar {
+  background-color: var(--nav-bg) !important;
+  border: 1px solid var(--medium-shadow);
+}
+
+.mNavBarSelected::before {
+  background-color: var(--pure-white) !important;
+  box-shadow: 0 2px 5px var(--soft-shadow);
+}
+
+.mNavBarChosed {
+  color: var(--pure-black);
+}
+
+.mNavBarSelected {
+  color: var(--pure-black);
+}
+
+.mNavBtn img {
+  filter: brightness(0) !important;
+}
+
+/* ========================== MENU PAGE ========================== */
+.mOverlay {
+  background: var(--dark-shadow) !important;
+}
+
+.mMenuPageOpen {
+  background-color: var(--pure-white) !important;
+  border: 1px solid var(--light-gray);
+  box-shadow: 0 5px 30px var(--dark-shadow) !important;
+}
+
+.mCloseBtn {
+  border: 1px solid var(--pure-black);
+  color: var(--pure-black);
+}
+
+.mCloseBtn:hover {
+  background-color: var(--pure-black);
+  color: var(--pure-white);
+}
+
+/* ========================== CARDS SECTION ========================== */
+.fCards-section {
+  background: var(--pure-white) !important;
+}
+
+.fSection-title {
+  background-color: var(--pure-white) !important;
+  color: var(--pure-black) !important;
+  border: 1px solid var(--pure-black);
+  box-shadow: 0 2px 5px var(--medium-shadow) !important;
+}
+
+.fDrink-card {
+  background: var(--pure-white) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 2px 8px var(--soft-shadow) !important;
+}
+
+.fDrink-card:hover {
+  border-color: var(--pure-black) !important;
+  box-shadow: 0 4px 12px var(--medium-shadow) !important;
+}
+
+.fTittle {
+  color: var(--pure-black) !important;
+}
+
+.fAbout {
+  color: var(--medium-gray) !important;
+}
+
+.fPrice {
+  background-color: var(--pure-white) !important;
+  color: var(--pure-black) !important;
+  border: 1px solid var(--medium-shadow) !important;
+}
+
+.fDrink-card:hover .fPrice {
+  background-color: var(--pure-black) !important;
+  color: var(--pure-white) !important;
+  border-color: var(--pure-black) !important;
+}
+
+/* ========================== FOOTER ========================== */
+.mFooter {
+  color: var(--medium-gray);
+}
+
+.m2M {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+  color: var(--pure-black);
+  border: 1px solid var(--soft-shadow);
+}
+
+.mDotted {
+  background-color: var(--medium-gray);
+}
+
+/* ========================== RESPONSIVE ========================== */
+@media (max-width: 600px) {
+  .fSection-title {
+    border-width: 2px;
+  }
+
+  .fDrink-card {
+    border-width: 1px;
+  }
+}
+/* ========================== END PALETTE ========================== */
